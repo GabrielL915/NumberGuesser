@@ -5,6 +5,3 @@ h1>NumberGuesser</h1>
   <li>JavaScript</li>
   <li>Css</li>
 </ul>
-
-<h2>Como usar</h2>
-<p>Para usar o LoanCalculator, basta abrir o arquivo index.html em um navegador da web. A aplicação será carregada e você poderá começar a simular empréstimos imediatamente.</p>
