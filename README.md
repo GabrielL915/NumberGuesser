@@ -3,5 +3,5 @@
 <ul>
   <li>HTML</li>
   <li>JavaScript</li>
-  <li>Css</li>
+  <li>CSS</li>
 </ul>
