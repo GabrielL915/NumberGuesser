@@ -20,14 +20,14 @@ form.addEventListener("submit", (event) => {
 
   let guessInput = parseInt(input.value);
   if (isNaN(guessInput) || guessInput < min || guessInput > max) {
-    displayMessage(`Please enter a number between ${min} and ${max}`, "red");
+    displayMessage(`Escolha um numero entre ${min} e ${max}`, "red");
   } else if (guessInput === winningNum) {
-    gameOver(true, `Number ${guessInput} is correct, YOU WIN!!!`, "green");
+    gameOver(true, `O numero ${guessInput} está correto, Voce GANHOU!!!`, "green");
   } else if (guessesLeft === 0) {
-    gameOver(false, `${guessesLeft} guesses left, GAME OVER!!`, "red");
+    gameOver(false, `${guessesLeft} tentativas, GAME OVER!!`, "red");
   } else {
     displayMessage(
-      `${guessInput} is not the winning number: more ${guessesLeft} guesses left`,
+      `${guessInput} não é o numero sorteado: mais ${guessesLeft} tentativas`,
       "blue"
     );
   }
@@ -47,7 +47,7 @@ function gameOver(isWon, msg, color) {
   message.style.display = "none";
 
   const playAgain = document.createElement("button");
-  playAgain.textContent = "Play Again";
+  playAgain.textContent = "Jogar Novamente";
   playAgain.className = "play-again";
   game.appendChild(playAgain);
   game.addEventListener("click", playAgainClick);
